@@ -344,44 +344,44 @@ var MyScroll = "";
     },
 
     // Contact Form
-    contactForm: function () {
-      $(".contact-form").on("submit", function (e) {
-        e.preventDefault();
-        if ($(".contact-form").valid()) {
-          var _self = $(this);
-          _self
-            .closest("div")
-            .find('button[type="submit"]')
-            .attr("disabled", "disabled");
-          var data = $(this).serialize();
-          $.ajax({
-            url: "./assets/mail/contact.php",
-            type: "post",
-            dataType: "json",
-            data: data,
-            success: function (data) {
-              $(".contact-form").trigger("reset");
-              _self.find('button[type="submit"]').removeAttr("disabled");
-              if (data.success) {
-                document.getElementById("message").innerHTML =
-                  "<h4 class='color-primary mt-5'>Email Sent Successfully</h4>";
-              } else {
-                document.getElementById("message").innerHTML =
-                  "<h4 class='color-primary mt-5'>There is an error</h4>";
-              }
-              $("#messages").show("slow");
-              $("#messages").slideDown("slow");
-              setTimeout(function () {
-                $("#messages").slideUp("hide");
-                $("#messages").hide("slow");
-              }, 4000);
-            },
-          });
-        } else {
-          return false;
-        }
-      });
-    },
+    // contactForm: function () {
+    //   $(".contact-form").on("submit", function (e) {
+    //     e.preventDefault();
+    //     if ($(".contact-form").valid()) {
+    //       var _self = $(this);
+    //       _self
+    //         .closest("div")
+    //         .find('button[type="submit"]')
+    //         .attr("disabled", "disabled");
+    //       var data = $(this).serialize();
+    //       $.ajax({
+    //         url: "./assets/mail/contact.php",
+    //         type: "post",
+    //         dataType: "json",
+    //         data: data,
+    //         success: function (data) {
+    //           $(".contact-form").trigger("reset");
+    //           _self.find('button[type="submit"]').removeAttr("disabled");
+    //           if (data.success) {
+    //             document.getElementById("message").innerHTML =
+    //               "<h4 class='color-primary mt-5'>Email Sent Successfully</h4>";
+    //           } else {
+    //             document.getElementById("message").innerHTML =
+    //               "<h4 class='color-primary mt-5'>There is an error</h4>";
+    //           }
+    //           $("#messages").show("slow");
+    //           $("#messages").slideDown("slow");
+    //           setTimeout(function () {
+    //             $("#messages").slideUp("hide");
+    //             $("#messages").hide("slow");
+    //           }, 4000);
+    //         },
+    //       });
+    //     } else {
+    //       return false;
+    //     }
+    //   });
+    // },
 
   };
 

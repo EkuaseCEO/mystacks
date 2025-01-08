@@ -117,50 +117,46 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="text-block">
-                                <form action="https://uiparadox.co.uk/public/templates/techsync/v2/contact.html" method="post" class="contact-form">
+                               
+                                <form action="" method="post">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-24">
                                                 <label for="fullName" id="name" class="mb-8">Full Name</label>
-                                                <input type="text" class="form-control" name="name" id="fullName"
-                                                    placeholder="John" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-24">
-                                                <label for="lastName" id="lName" class="mb-8">Last Name</label>
-                                                <input type="text" class="form-control" name="last_name" id="lastName"
-                                                    placeholder="Doe" required>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="john Doe" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-24">
                                                 <label for="eMail" id="email" class="mb-8">Email</label>
-                                                <input type="text" class="form-control" name="email" id="eMail"
+                                                <input type="text" class="form-control" name="email" id="email"
                                                     placeholder="example@gmail.com" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-24">
-                                                <label for="phoneNumber" id="phone" class="mb-8">Phone Number</label>
-                                                <input type="text" class="form-control" name="phone" id="phoneNumber"
-                                                    placeholder="+1" required>
+                                                <label for="phone" id="phone" class="mb-8">Phone No</label>
+                                                <input type="number" class="form-control" name="phone" id="phone"
+                                                    placeholder="226-552-2300" required>
                                             </div>
                                         </div>
-                                        
+                                        <div class="col-md-6">
+                                            <div class="mb-24">
+                                                <label for="city" id="city" class="mb-8">City</label>
+                                                <input type="text" class="form-control" name="city" id="city"
+                                                    placeholder="Toronto" required>
+                                            </div>
+                                        </div>
                                         <div class="col-md-12">
                                             <div class="mb-24">
-                                                <label for="comments" id="message" class="mb-8">Project Description</label>
-                                                <textarea name="message" class="form-control" id="comments" cols="30" rows="10" placeholder="Tell us about your project...." required></textarea>
+                                                <label for="comments" id="message" class="mb-8">Your Experience/Opinion</label>
+                                                <textarea name="message" class="form-control" id="message" cols="30"
+                                                    rows="10" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <label class="material-checkbox">
-                                                    <input type="checkbox"><span class="checkmark"></span> Agree to the
-                                                    Privacy Policy
-                                                </label>
-                                                <button type="submit" class="cus-btn">
+                                                <button type="button" onclick="Submit()" class="cus-btn">
                                                     <span>Submit</span>
                                                 </button>
                                             </div>
@@ -188,9 +184,9 @@
                     <div class="col-lg-12">
                         <div class="newsletter mb-24">
                             <h4 class="white">Subscribe to Our Newsletter</h4>
-                            <form action="https://uiparadox.co.uk/public/templates/techsync/v2/contact.html" method="post">
+                            <form>
                                 <input type="email" class="form-control" name="email" id="newsEmail" placeholder="Enter your email">
-                                <button type="submit" class="cus-btn-2">Subscribe</button>
+                                <button type="button" onclick="Subscribe()" class="cus-btn-2">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -198,10 +194,10 @@
                         <div class="footer-logo">
                             <img src="assets/media/ft-logo.png" alt="" class="ft-logo mb-32">
                             <p class="medium-gray">
-                                mystacks Technology develops and maintain websites and software for businesses and clients.
+                                Delivery product or anything from city to city has always been a hassle but Parsend is here to make the difference.
                             </p>
                             <p class="medium-gray d-xl-block d-none">
-                                We are expert in developing entreprise software and we use the latest technology to re-engineer the clients needs.
+                                Parsend is a brand of Mystacks Technology.
                             </p>
                         </div>
                     </div>
@@ -212,7 +208,7 @@
                                     <h6 class="white">Quick Link:</h6>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="index-2.html">Home</a>
+                                            <a href="index.html">Home</a>
                                         </li>
                                         <!-- <li>
                                             <a href="about.html">About Us</a>
@@ -362,8 +358,9 @@
     <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
     <script src="assets/js/vendor/smooth-scrollbar.js"></script>
     <script src="assets/js/vendor/jquery-validator.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/function.js"></script>
 
 </body>
 
